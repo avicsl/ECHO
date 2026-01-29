@@ -262,7 +262,7 @@
                             android:shadowDx="0"
                             android:shadowDy="2"
                             android:shadowRadius="6"
-                            android:text="Boy"
+                            android:text="Male"
                             android:textColor="#FFFFFF"
                             android:textSize="16sp"
                             android:textStyle="bold" />
@@ -299,7 +299,7 @@
                             android:shadowDx="0"
                             android:shadowDy="2"
                             android:shadowRadius="6"
-                            android:text="Girl"
+                            android:text="Female"
                             android:textColor="#FFFFFF"
                             android:textSize="16sp"
                             android:textStyle="bold" />
