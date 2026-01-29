@@ -1,4 +1,4 @@
-# ECHO - Virtual Companion App
+Virtual Companion App
 
 A wellness-focused Android application featuring a customizable virtual companion that supports emotional well-being through mood tracking, personalized quests, and interactive features.
 
