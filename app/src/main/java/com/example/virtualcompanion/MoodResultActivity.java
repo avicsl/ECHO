@@ -35,7 +35,7 @@ public class MoodResultActivity extends BaseActivity {
             });
         }
 
-        // Home → MoodResultActivity
+        // Home to MoodResultActivity
         if (navHome != null) {
             navHome.setOnClickListener(v -> {
 
