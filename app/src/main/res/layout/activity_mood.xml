@@ -175,7 +175,7 @@
             android:clickable="true"
             android:contentDescription="Very Sad"
             android:focusable="true"
-            android:src="@drawable/emoji_very_sad" />
+            android:src="@drawable/emoji_neutral_b" />
 
         <!-- Sad - 2 -->
         <ImageView
@@ -187,7 +187,7 @@
             android:clickable="true"
             android:contentDescription="Sad"
             android:focusable="true"
-            android:src="@drawable/emoji_sad" />
+            android:src="@drawable/emoji_happy_b" />
 
         <!-- Neutral - 3 -->
         <ImageView
@@ -199,7 +199,7 @@
             android:clickable="true"
             android:contentDescription="Neutral"
             android:focusable="true"
-            android:src="@drawable/emoji_neutral" />
+            android:src="@drawable/emoji_sad_b" />
 
         <!-- Happy - 4 -->
         <ImageView
@@ -211,7 +211,7 @@
             android:clickable="true"
             android:contentDescription="Happy"
             android:focusable="true"
-            android:src="@drawable/emoji_happy" />
+            android:src="@drawable/emoji_angry_b" />
 
         <!-- Very Happy - 5 -->
         <ImageView
@@ -223,7 +223,7 @@
             android:clickable="true"
             android:contentDescription="Very Happy"
             android:focusable="true"
-            android:src="@drawable/emoji_very_happy" />
+            android:src="@drawable/emoji_anxious_b" />
 
     </LinearLayout>
 

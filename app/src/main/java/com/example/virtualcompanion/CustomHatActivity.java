@@ -50,8 +50,18 @@ public class CustomHatActivity extends BaseActivity {
                     "150"
             };
 
+            int[] dummyEquip = new int[itemImages.length];
+
             ShopItemAdapter adapter =
-                    new ShopItemAdapter(itemImages, itemPrices);
+                    new ShopItemAdapter(
+                            itemImages,
+                            dummyEquip,
+                            itemPrices,
+                            resId -> {
+                                // Do nothing for now
+                            }
+                    );
+
 
             itemsRecyclerView.setAdapter(adapter);
         }
