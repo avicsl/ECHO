@@ -27,4 +27,4 @@ public class BaseActivity extends AppCompatActivity {
         // Always ensure music is running
         MusicManager.startMusic(this);
     }
-}
+} 
