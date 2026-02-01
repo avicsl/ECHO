@@ -101,7 +101,7 @@
                 android:shadowDy="2"
                 android:shadowRadius="6"
                 android:text="Settings"
-                android:textColor="#EB9671"
+                android:textColor="#FFFFFF"
                 android:textSize="28sp"
                 android:textStyle="bold" />
 
@@ -160,7 +160,7 @@
                         android:layout_height="wrap_content"
                         android:checked="true"
                         app:thumbTint="#FFFFFF"
-                        app:trackTint="#FFB088" />
+                        app:trackTint="#F6DBD2" />
 
                 </LinearLayout>
 
@@ -199,8 +199,8 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:hint="Iggy"
-                        android:textSize="24sp"
+                        android:hint="name your companion"
+                        android:textSize="20sp"
                         android:textColor="#FFFFFF"
                         android:textColorHint="#CCFFFFFF"
                         android:background="@null"
