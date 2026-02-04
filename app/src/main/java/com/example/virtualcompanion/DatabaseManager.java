@@ -450,6 +450,24 @@ public class DatabaseManager {
         return count;
     }
 
+    /**
+     * Reset quest progress for a specific mood
+     * (Used when user selects a mood again)
+     */
+    public void resetQuestsForMood(String mood) {
+
+        // This does not reset the Happy_mood quests
+        if ("happy".equalsIgnoreCase(mood)) return;
+
+        SQLiteDatabase db = helper.getWritableDatabase();
+
+        db.execSQL(
+                "UPDATE quest SET progress = 0, rewarded = 0 WHERE mood = ?",
+                new Object[]{mood}
+        );
+    }
+
+
     // ================= PREFS =================
 
     public boolean hasCustomized() {

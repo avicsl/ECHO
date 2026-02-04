@@ -27,23 +27,45 @@ public class MoodResultActivity extends BaseActivity {
         setContentView(R.layout.activity_mood_result);
 
         // ===== MOOD REFLECTION =====
-        int moodIndex = DatabaseManager.get(this).getLatestMood();
+        int moodIndex = getIntent().getIntExtra("selected_mood", -1);
+
+        if (moodIndex == -1) {
+            moodIndex = DatabaseManager.get(this).getLatestMood();
+        }
+        final int finalMoodIndex = moodIndex;
+
         String gender = DatabaseManager.get(this).getGender();
 
         int[] emotions = "male".equalsIgnoreCase(gender)
                 ? new int[]{
-                R.drawable.emotion_neutral,
-                R.drawable.emotion_happy,
-                R.drawable.emotion_sad,
-                R.drawable.emotion_angry,
-                R.drawable.emotion_anxious
+                R.drawable.emote_neutral_b_moodresult,
+                R.drawable.emote_happy_b_moodresult,
+                R.drawable.emote_sad_b_moodresult,
+                R.drawable.emote_angry_b_moodresult,
+                R.drawable.emote_anxious_b_moodresult
         }
                 : new int[]{
-                R.drawable.emotion_neutral_g,
-                R.drawable.emotion_happy_g,
-                R.drawable.emotion_sad_g,
-                R.drawable.emotion_angry_g,
-                R.drawable.emotion_anxious_g
+                R.drawable.emote_neutral_g_moodresult,
+                R.drawable.emote_happy_g_moodresult,
+                R.drawable.emote_sad_g_moodresult,
+                R.drawable.emote_angry_g_moodresult,
+                R.drawable.emote_anxious_g_moodresult
+        };
+
+        int[] overlays = "male".equalsIgnoreCase(gender)
+                ? new int[]{
+                R.drawable.emote_neutral_b_moodresult,
+                R.drawable.emote_happy_b_moodresult,
+                R.drawable.emote_sad_b_moodresult,
+                R.drawable.emote_angry_b_moodresult,
+                R.drawable.emote_anxious_b_moodresult
+        }
+                : new int[]{
+                R.drawable.emote_neutral_g_moodresult,
+                R.drawable.emote_happy_g_moodresult,
+                R.drawable.emote_sad_g_moodresult,
+                R.drawable.emote_angry_g_moodresult,
+                R.drawable.emote_anxious_g_moodresult
         };
 
         ImageView emotionOverlay = findViewById(R.id.emotionOverlay);
@@ -51,16 +73,12 @@ public class MoodResultActivity extends BaseActivity {
         TextView resultMoodLabel = findViewById(R.id.resultMoodLabel);
         TextView moodMessage = findViewById(R.id.moodMessage);
 
-        if (emotionOverlay != null) {
-            emotionOverlay.setImageResource(
-                    "male".equalsIgnoreCase(gender)
-                            ? R.drawable.emotion_neutral
-                            : R.drawable.emotion_neutral_g
-            );
-        }
-
         if (resultPetBase != null) {
             resultPetBase.setImageResource(emotions[moodIndex]);
+        }
+
+        if (emotionOverlay != null) {
+            emotionOverlay.setImageResource((overlays[moodIndex]));
         }
 
         if (resultMoodLabel != null) {
@@ -161,6 +179,8 @@ public class MoodResultActivity extends BaseActivity {
                         MoodResultActivity.class
                 );
 
+                intent.putExtra("selected_mood",  finalMoodIndex);
+
                 startActivity(intent);
                 overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
             });
@@ -175,6 +195,9 @@ public class MoodResultActivity extends BaseActivity {
                         QuestsActivity.class
                 );
 
+                intent.putExtra("selected_mood", finalMoodIndex);
+
+
                 startActivity(intent);
                 overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
             });
@@ -188,6 +211,9 @@ public class MoodResultActivity extends BaseActivity {
                         MoodResultActivity.this,
                         CustomTopActivity.class
                 );
+
+                intent.putExtra("selected_mood", finalMoodIndex);
+
 
                 startActivity(intent);
                 overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);

@@ -127,7 +127,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                         "('Journaling Check-In','Write a short journal entry about your day',40,'neutral')," +
                         "('Stretch Break','Do a short stretching routine',35,'neutral')," +
 
-                        // Happy
+                        // Happy (not used for now since when the user is happy, it just shows a Congratulatory message"
                         "('Share Gratitude','Tell someone what you appreciate about them',50,'happy')," +
                         "('Compliment Someone','Give a genuine compliment today',40,'happy')," +
                         "('Dance for 5 Minutes','Move to your favorite song',45,'happy')," +

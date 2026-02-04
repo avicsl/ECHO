@@ -16,6 +16,8 @@ public class QuestsActivity extends BaseActivity {
     private QuestsAdapter questsAdapter;
     private DatabaseManager db;
     private ImageView navHome, navQuests, navCustomize, settingsIcon;
+    private int moodIndex;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +25,12 @@ public class QuestsActivity extends BaseActivity {
         setContentView(R.layout.activity_quests);
 
         db = DatabaseManager.get(this);
+
+        moodIndex = getIntent().getIntExtra("selected_mood", -1);
+
+        if (moodIndex == -1) {
+            moodIndex = db.getLatestMood();
+        }
 
         initializeViews();
         setupRecyclerView();
@@ -51,15 +59,16 @@ public class QuestsActivity extends BaseActivity {
 
         String mood = db.getLatestMoodText();
 
-        if ("happy".equals(mood)) {
+        if (moodIndex == 1) {
             Intent intent = new Intent(this, MoodResultActivity.class);
             intent.putExtra("flow", "HAPPY_MOOD");
+            intent.putExtra("selected_mood", moodIndex);
             startActivity(intent);
             finish();
             return;
         }
 
-        List<Quest> quests = db.getQuestsForMood(db.getLatestMood());
+        List<Quest> quests = db.getQuestsForMood(moodIndex);
 
 
         if (quests.isEmpty()) {
@@ -134,7 +143,9 @@ public class QuestsActivity extends BaseActivity {
 
         if (navHome != null) {
             navHome.setOnClickListener(v -> {
-                startActivity(new Intent(this, MoodResultActivity.class));
+                Intent intent = new Intent(this, MoodResultActivity.class);
+                intent.putExtra("selected_mood", moodIndex);
+                startActivity(intent);
                 overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
             });
         }
