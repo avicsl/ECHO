@@ -1,9 +1,13 @@
 package com.example.virtualcompanion;
 
+import android.animation.ObjectAnimator;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
+import android.view.animation.AlphaAnimation;
+import android.view.animation.Animation;
+import android.widget.TextView;
 
 import androidx.constraintlayout.widget.ConstraintLayout;
 
@@ -48,13 +52,28 @@ public class OpeningActivity extends BaseActivity {
 
         MusicManager.startMusic(this);
 
-       // uncomment this if testing phase done
+        // uncomment this if testing phase done
         // =======================================================================
-       // DatabaseManager db = DatabaseManager.get(this);
+        // DatabaseManager db = DatabaseManager.get(this);
         // =======================================================================
 
         // Get main layout
         ConstraintLayout mainLayout = findViewById(R.id.main);
+
+        // ================= BLINKING "TAP ANYWHERE" TEXT =================
+        TextView tapAnywhereText = findViewById(R.id.tapAnywhereText);
+
+        if (tapAnywhereText != null) {
+            // Create blink animation
+            Animation blinkAnimation = new AlphaAnimation(0.4f, 1.0f); // From 40% to 100% opacity
+            blinkAnimation.setDuration(1000); // 1 second per blink
+            blinkAnimation.setRepeatMode(Animation.REVERSE); // Fade in, then fade out
+            blinkAnimation.setRepeatCount(Animation.INFINITE); // Blink forever
+
+            // Start animation
+            tapAnywhereText.startAnimation(blinkAnimation);
+        }
+        // =================================================================
 
         // Click anywhere to continue
         mainLayout.setOnClickListener(new View.OnClickListener() {

@@ -92,4 +92,25 @@
         app:layout_constraintTop_toBottomOf="@id/appName"
         app:layout_constraintWidth_percent="0.6" />
 
+    <!-- Tap Anywhere Text - Low Opacity -->
+    <TextView
+        android:id="@+id/tapAnywhereText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="64dp"
+        android:alpha="0.9"
+        android:elevation="16dp"
+        android:fontFamily="@font/nunito_bold"
+        android:shadowColor="#80000000"
+        android:shadowDx="0"
+        android:shadowDy="2"
+        android:shadowRadius="4"
+        android:text="TAP ANYWHERE TO CONTINUE"
+        android:textColor="#FFFFFF"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

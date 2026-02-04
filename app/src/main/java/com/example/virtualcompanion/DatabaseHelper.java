@@ -147,20 +147,20 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
                         // ========== HAPPY (21 quests) - Energizing, joyful, celebrating ==========
                         "('Big Smile','Go to a mirror. Look at yourself. Smile as big as you can. Hold it for 10 seconds.',30,1,'happy')," +
-                        "('Dance Break','Play any upbeat song. Move your body however you want. Dance for 1 minute.',50,2,'happy')," +
+                        "('Dance Break','Play any upbeat song. Move your body however you want. Dance for 1 minute.',50,1,'happy')," +
                         "('Sing Out Loud','Pick any song you know. Sing it out loud for 1 minute. Loud or quiet, your choice.',30,1,'happy')," +
                         "('Happy Memory','Close your eyes. Think of one happy memory. Picture it clearly. Stay with that feeling for 1 minute.',30,1,'happy')," +
                         "('Watch Something Funny','Watch one short funny video. Let yourself laugh.',50,2,'happy')," +
-                        "('Victory Dance','Stand up. Do a silly celebration dance for 30 seconds. You earned it.',30,1,'happy')," +
+                        "('Victory Dance','Stand up. Do a silly celebration dance. You earned it.',30,1,'happy')," +
                         "('Fresh Air Moment','Open a window or step outside. Stand there. Breathe the fresh air for 1 minute.',30,1,'happy')," +
                         "('Happy Song','Play one song that always makes you happy. Sing along or just listen and enjoy.',50,2,'happy')," +
                         "('Gratitude Moment','Think of 3 things you are grateful for today. Say them out loud.',30,1,'happy')," +
-                        "('Energy Burst','Do 10 jumping jacks or march in place for 30 seconds. Feel the energy.',30,1,'happy')," +
+                        "('Energy Burst','Do 10 jumping jacks or march in place. Feel the energy.',30,1,'happy')," +
                         "('Write One Happy Thing','Get paper. Write one sentence about what made you happy today.',30,1,'happy')," +
                         "('Cute Animal Time','Look at cute animal photos or videos for 1 minute. Enjoy the cuteness.',30,1,'happy')," +
                         "('Enjoy a Treat','Get something small you like to eat. Sit down. Eat it slowly and enjoy every bite.',30,1,'happy')," +
                         "('Kind Act','Do one tiny kind thing for yourself. Compliment yourself. Give yourself a break.',30,1,'happy')," +
-                        "('Power Pose','Stand with your arms raised high or hands on hips. Stand tall. Hold for 30 seconds.',30,1,'happy')," +
+                        "('Power Pose','Stand with your arms raised high or hands on hips. Stand tall. Hold for 30 seconds then shake.',30,1,'happy')," +
                         "('Plan Something Fun','Think of one fun thing you want to do this week. Picture yourself doing it.',30,1,'happy')," +
                         "('Self-Appreciation','Pat yourself on the back. Literally. Say: I did well today.',30,1,'happy')," +
                         "('Happy Photo','Take a photo of something that makes you smile right now. Look at it.',30,1,'happy')," +
@@ -173,7 +173,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                         "('Write Your Feelings','Get paper. Write one or two sentences about how you feel right now. Be honest.',30,1,'sad')," +
                         "('Comfort Song','Play one song that soothes you or makes you feel understood. Just listen.',50,2,'sad')," +
                         "('Slow Gentle Walk','Walk very slowly around your room for 1 minute. Be gentle with yourself.',30,1,'sad')," +
-                        "('Self-Hug','Wrap your arms around yourself. Give yourself a gentle hug. Hold for 30 seconds.',30,1,'sad')," +
+                        "('Self-Hug','Wrap your arms around yourself. Give yourself a gentle hug. Hold for a minute.',30,1,'sad')," +
                         "('Permission to Cry','Sit or lie down. If you need to cry, let yourself. Crying is okay and healthy.',30,1,'sad')," +
                         "('Kind Words to Self','Say this slowly: I deserve kindness. It is okay to feel sad. I am allowed to struggle.',30,1,'sad')," +
                         "('Get Cozy','Put on soft comfortable clothes or wrap yourself in a soft blanket.',30,1,'sad')," +
@@ -193,7 +193,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
                         // ========== ANGRY (21 quests) - Safe release, grounding, solution-focused ==========
                         "('Power Breathing','Breathe in hard through your nose. Breathe out hard through your mouth. Do 10 times.',30,1,'angry')," +
-                        "('Run in Place','Run in place as fast as you can for 30 seconds. Let the energy out.',30,1,'angry')," +
+                        "('Run in Place','Run in place as fast as you can for a minute. Let the energy out.',30,1,'angry')," +
                         "('Hit a Pillow','Get a pillow. Punch it or hit it as hard as you want. Let it out.',30,1,'angry')," +
                         "('Scream in Pillow','Get a pillow. Press it to your face. Scream into it as loud as you need.',30,1,'angry')," +
                         "('Write Your Anger','Write down why you are angry. Write exactly how you feel. Do not hold back.',50,2,'angry')," +
@@ -202,8 +202,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                         "('Loud Intense Music','Play loud or intense music that matches your energy. Listen for 2 minutes.',50,2,'angry')," +
                         "('Scrub Hard','Get a dish, table, or surface. Scrub it hard for 1 minute. Put your anger into scrubbing.',30,1,'angry')," +
                         "('Air Punches','Stand up. Punch the air in front of you. Do 20 hard punches.',30,1,'angry')," +
-                        "('Hold Ice','Hold an ice cube or something very cold for 30 seconds. Focus on the cold feeling.',30,1,'angry')," +
-                        "('Stomp Your Feet','Stomp your feet hard on the ground. Walk and stomp for 30 seconds. Make noise.',30,1,'angry')," +
+                        "('Hold Ice','Hold an ice cube or something very cold for 30 seconds each hand. Focus on the cold feeling.',30,1,'angry')," +
+                        "('Stomp Your Feet','Stomp your feet hard on the ground. Walk and stomp for a minute. Make noise.',30,1,'angry')," +
                         "('Rip Paper','Get scrap paper or old magazines. Rip them into small pieces. Rip as much as you want.',30,1,'angry')," +
                         "('Say It Out Loud','Say out loud why you are angry. No one needs to hear. Just say it.',30,1,'angry')," +
                         "('Squeeze and Release','Squeeze your fists as tight as you can. Hold 5 seconds. Release. Do 5 times.',30,1,'angry')," +
@@ -228,13 +228,13 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                         "('Past Strength','Think: I have felt anxious before. I got through it. I can get through this too.',30,1,'anxious')," +
                         "('Reality Check','Ask yourself: Is this thought 100 percent true? What is the real evidence?',30,1,'anxious')," +
                         "('Slow Mindful Walking','Walk as slowly as possible for 1 minute. Feel each step. Feel your feet on the ground.',30,1,'anxious')," +
-                        "('Palm Press','Press your palms together as hard as you can. Hold for 30 seconds. Feel the pressure.',30,1,'anxious')," +
+                        "('Palm Press','Press your palms together as hard as you can. Hold for 30 seconds each hand. Feel the pressure.',30,1,'anxious')," +
                         "('Weighted Comfort','Put something heavy on your lap or legs. A blanket, pillow, or book. Feel the weight.',30,1,'anxious')," +
                         "('Smell Something','Smell soap, lotion, fresh air, or anything calming. Focus only on the smell.',30,1,'anxious')," +
                         "('Calming Affirmation','Say 10 times slowly: I am safe right now. I am okay. I can handle this.',30,1,'anxious')," +
                         "('Simple Coloring','Color one simple shape. A circle, square, or pattern. Focus only on coloring.',50,2,'anxious')," +
                         "('One Tiny Step','Write: One tiny thing I can do about this worry is... Write one small action.',30,1,'anxious')," +
-                        "('Ice on Wrists','Hold ice or something cold on your wrists for 30 seconds. Focus on the cold.',30,1,'anxious')," +
+                        "('Ice on Wrists','Hold ice or something cold on your wrists for 30 seconds each hand. Focus on the cold.',30,1,'anxious')," +
                         "('Counting Focus','Count backwards from 50 by 3s. Say each number out loud. 50, 47, 44, 41... Focus only on counting.',50,2,'anxious');" +
                         ""
         );
