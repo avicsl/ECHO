@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Tablet overrides (7-10 inch tablets, sw600dp+) -->
+
+    <!-- Settings icon -->
+    <dimen name="settings_icon_size">52dp</dimen>
+    <dimen name="settings_icon_padding">12dp</dimen>
+    <dimen name="settings_icon_margin">20dp</dimen>
+
+    <!-- Coins display -->
+    <dimen name="coins_padding_horizontal">20dp</dimen>
+    <dimen name="coins_padding_vertical">10dp</dimen>
+    <dimen name="coins_margin">20dp</dimen>
+    <dimen name="coins_text_size">20sp</dimen>
+    <dimen name="coins_icon_size">28dp</dimen>
+
+    <!-- App title -->
+    <dimen name="app_title_margin_top">12dp</dimen>
+    <dimen name="app_title_max_size">72sp</dimen>
+    <dimen name="app_title_min_size">50sp</dimen>
+
+    <!-- Pet image - constrained for tablets so it doesn't fill entire screen -->
+    <item name="pet_image_width_percent" format="float" type="dimen">0.55</item>
+
+    <!-- Mood prompt text -->
+    <dimen name="mood_prompt_text_size">22sp</dimen>
+    <dimen name="mood_prompt_margin_top">12dp</dimen>
+    <dimen name="mood_info_margin_horizontal">48dp</dimen>
+
+    <!-- Emoji container - larger touch targets for tablets -->
+    <dimen name="emoji_container_margin_top">14dp</dimen>
+    <dimen name="emoji_container_padding_horizontal">24dp</dimen>
+    <dimen name="emoji_container_padding_vertical">16dp</dimen>
+    <dimen name="emoji_size">64dp</dimen>
+    <dimen name="emoji_margin_horizontal">10dp</dimen>
+
+    <!-- Submit button -->
+    <dimen name="submit_margin_top">18dp</dimen>
+    <dimen name="submit_min_width">200dp</dimen>
+    <dimen name="submit_min_height">56dp</dimen>
+    <dimen name="submit_padding_horizontal">40dp</dimen>
+    <dimen name="submit_padding_vertical">14dp</dimen>
+    <dimen name="submit_text_size">20sp</dimen>
+    <dimen name="submit_corner_radius">32dp</dimen>
+
+    <!-- Bottom navigation -->
+    <dimen name="nav_padding_vertical">20dp</dimen>
+    <dimen name="nav_icon_height">34dp</dimen>
+</resources>

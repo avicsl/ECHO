@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Phone defaults -->
+
+    <!-- Settings icon -->
+    <dimen name="settings_icon_size">44dp</dimen>
+    <dimen name="settings_icon_padding">10dp</dimen>
+    <dimen name="settings_icon_margin">16dp</dimen>
+
+    <!-- Coins display -->
+    <dimen name="coins_padding_horizontal">16dp</dimen>
+    <dimen name="coins_padding_vertical">8dp</dimen>
+    <dimen name="coins_margin">16dp</dimen>
+    <dimen name="coins_text_size">18sp</dimen>
+    <dimen name="coins_icon_size">24dp</dimen>
+
+    <!-- App title -->
+    <dimen name="app_title_margin_top">8dp</dimen>
+    <dimen name="app_title_max_size">60sp</dimen>
+    <dimen name="app_title_min_size">40sp</dimen>
+
+    <!-- Pet image -->
+    <item name="pet_image_width_percent" format="float" type="dimen">1.02</item>
+
+    <!-- Mood prompt text -->
+    <dimen name="mood_prompt_text_size">18sp</dimen>
+    <dimen name="mood_prompt_margin_top">8dp</dimen>
+    <dimen name="mood_info_margin_horizontal">32dp</dimen>
+
+    <!-- Emoji container -->
+    <dimen name="emoji_container_margin_top">8dp</dimen>
+    <dimen name="emoji_container_padding_horizontal">16dp</dimen>
+    <dimen name="emoji_container_padding_vertical">12dp</dimen>
+    <dimen name="emoji_size">48dp</dimen>
+    <dimen name="emoji_margin_horizontal">6dp</dimen>
+
+    <!-- Submit button -->
+    <dimen name="submit_margin_top">12dp</dimen>
+    <dimen name="submit_min_width">160dp</dimen>
+    <dimen name="submit_min_height">50dp</dimen>
+    <dimen name="submit_padding_horizontal">32dp</dimen>
+    <dimen name="submit_padding_vertical">12dp</dimen>
+    <dimen name="submit_text_size">18sp</dimen>
+    <dimen name="submit_corner_radius">30dp</dimen>
+
+    <!-- Bottom navigation -->
+    <dimen name="nav_padding_vertical">16dp</dimen>
+    <dimen name="nav_icon_height">28dp</dimen>
+</resources>
