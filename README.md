@@ -6,7 +6,7 @@ A wellness-focused Android application featuring a customizable virtual companio
 
 ## 📱 About the App
 
-Virtual Companion is a wellness app designed to help users track their mood, complete wellness quests, and customize their companion's appearance. The app uses a SQLite database to persist user data, mood logs, quest progress, and accessory purchases.
+ECHO is a wellness app designed to help users track their mood, complete wellness quests, and customize their companion's appearance. The app uses a SQLite database to persist user data, mood logs, quest progress, and accessory purchases.
 
 ### Key Features
 - **Mood Tracking**: Log daily moods using a 1-5 scale (Neutral, Happy, Sad, Angry, Anxious)
